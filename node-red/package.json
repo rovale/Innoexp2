@@ -1,0 +1,12 @@
+{
+  "name": "node-red-project",
+  "description": "A Node-RED Project",
+  "version": "0.0.1",
+  "dependencies": {
+    "node-red-contrib-debounce": "0.0.2",
+    "node-red-contrib-throttle": "~0.1.6",
+    "node-red-dashboard": "~2.6.2",
+    "node-red-node-arduino": "0.0.13",
+    "node-red-node-serialport": "~0.6.0"
+  }
+}
