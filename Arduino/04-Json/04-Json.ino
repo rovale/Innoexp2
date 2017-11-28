@@ -1,9 +1,9 @@
 /*
 Sends the light sensor value every 500 seconds:
-{"light": <0-1024>}
+{"light": 0-1024}
 
 Sets the dim value of the LED after receiving:
-{dimmer: <0-255>}
+{"dimmer": 0-255}
 
 Documentation of the Json library:
 https://arduinojson.org/

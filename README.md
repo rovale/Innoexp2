@@ -17,6 +17,7 @@ It introduces:
 - Usage of an [LED](https://learn.sparkfun.com/tutorials/light-emitting-diodes-leds).
 - Usage of [resistors](https://learn.sparkfun.com/tutorials/resistors).
 - The first [sketch](./Arduino/01-Blink/01-Blink.ino)
+    - defines a constant with the functional name of the pin
     - has a [setup and a loop](http://learn.olympiacircuits.com/setup-and-loop-blocks.html),
     - turns a [digital pin](https://www.arduino.cc/en/Tutorial/DigitalPins) [on and off](https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/).
     - uses a [delay](https://www.arduino.cc/reference/en/language/functions/time/delay/) to time the blinking.
@@ -43,16 +44,16 @@ It introduces:
 ### Json
 Uses the serial interface. Sends the light sensor value every 500 seconds:
 ``` json
-{"light": <0-1024>}
+{"light": 0-1024}
 ```
 
 Sets the dim value of the LED after receiving:
 ``` json
-{dimmer: <0-255>}
+{"dimmer": 0-255}
 ```
 
 The [sketch](./Arduino/04-Json/04-Json.ino) introduces:
-- usage of a [library](https://www.arduino.cc/en/Guide/Libraries) to create / parse json messages: [ArduinoJson](https://arduinojson.org).
+- usage of a [library](https://www.arduino.cc/en/Guide/Libraries) to create / parse Json messages: [ArduinoJson](https://arduinojson.org).
 - power modulation ([PWM](https://www.arduino.cc/en/Tutorial/PWM)) to dim the LED.
 
 ### BoatHorn
@@ -83,4 +84,5 @@ The same as the previous flow but now directing all communication through an MQT
 - [Arduino language reference](https://www.arduino.cc/reference/en/)
 - [How to use a breadboard](https://learn.sparkfun.com/tutorials/how-to-use-a-breadboard)
 - [MQTT](https://www.hivemq.com/mqtt-essentials/)
+- [MQTT client](http://mqttfx.jensd.de/)
 - [Node-RED](https://nodered.org/)
